@@ -21,7 +21,7 @@
                 <asp:BoundField DataField="color_id" HeaderText="color_id" SortExpression="color_id" />
                 <asp:TemplateField>
                     <ItemTemplate>
-
+                        <!---- this is just a comment --->
                        <a href='Edit.aspx?id=<%# Eval("id") %>'>Editar</a>
 
                     </ItemTemplate>

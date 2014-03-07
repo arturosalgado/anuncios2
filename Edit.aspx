@@ -38,7 +38,7 @@
         <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
         <br />
         <br />
-        Descripcion<br />
+        Descripcion <br />
         <br />
         <asp:TextBox ID="TextBox2" runat="server" Height="88px" TextMode="MultiLine"></asp:TextBox>
         <br />

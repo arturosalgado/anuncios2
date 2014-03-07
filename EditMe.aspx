@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <h1>Edit your ad</h1>
+        <h1>Edit your ad Here</h1>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:autosConnectionString1 %>" DeleteCommand="DELETE FROM [anuncios] WHERE [id] = @id" InsertCommand="INSERT INTO [anuncios] ([title], [description], [marca_id], [color_id]) VALUES (@title, @description, @marca_id, @color_id)" SelectCommand="SELECT [id], [title], [description], [marca_id], [color_id] FROM [anuncios] WHERE ([id] = @id)" UpdateCommand="UPDATE [anuncios] SET [title] = @title, [description] = @description, [marca_id] = @marca_id, [color_id] = @color_id WHERE [id] = @id">
             <DeleteParameters>
                 <asp:Parameter Name="id" Type="Int32" />

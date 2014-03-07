@@ -22,7 +22,7 @@
                 <asp:TemplateField>
                     <ItemTemplate>
                         <!---- this is just a comment --->
-                       <a href='Edit.aspx?id=<%# Eval("id") %>'>Editar</a>
+                       <a href='EditMe.aspx?id=<%# Eval("id") %>'>Editar</a>
 
                     </ItemTemplate>
 

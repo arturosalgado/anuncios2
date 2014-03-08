@@ -7,8 +7,8 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server" style="width:900px;margin:0 auto;">
-    <div>
+    
+    <div style="margin:0 auto;width:900px;">
             <%
                 
                 if (dr.HasRows)
@@ -16,9 +16,9 @@
                     while (dr.Read())
                     {%>
                       
-                            <div style="border:1px solid #ccc; float:left; border-radius:6px;">
+                            <div style="border:1px solid #ccc; float:left; border-radius:6px;margin-right:10px;display:inline-block;min-width:200px;text-align:center;">
 
-                                <h1><%= dr.GetString(1) %></h1>
+                                <h1 style="padding:10px;"><%= dr.GetString(1) %></h1>
 
                                 
                             </div>
@@ -29,7 +29,7 @@
                 
             %>
     </div>
-    </form>
+    
 </body>
 </html>
 

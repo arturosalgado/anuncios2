@@ -16,7 +16,7 @@
                     while (dr.Read())
                     {%>
                       
-                            <div style="border:1px solid #ccc; float:left;">
+                            <div style="border:1px solid #ccc; float:left; border-radius:6px;">
 
                                 <h1><%= dr.GetString(1) %></h1>
 

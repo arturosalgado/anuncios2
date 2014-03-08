@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -7,8 +10,25 @@ using System.Web.UI.WebControls;
 
 public partial class _Default : System.Web.UI.Page
 {
+
+    protected SqlDataReader dr;
+
+
     protected void Page_Load(object sender, EventArgs e)
     {
+        string strConnection = ConfigurationManager.ConnectionStrings["autosConnectionString1"].ConnectionString;
+
+        SqlConnection con = new SqlConnection(strConnection);
+
+        con.Open();
+        SqlCommand command = new SqlCommand("select * from anuncios",con);
+        command.CommandType = CommandType.Text;
+        
+
+        dr = command.ExecuteReader();
+
+      
+
 
     }
 }
